@@ -1,0 +1,229 @@
+
+/* 右侧固定二维码 */
+.qrcode_fixed {
+    width: 110px;
+    height: 171px;
+    padding: 4px;
+    position: fixed;
+    right: 2%;
+    top: 33%;
+    z-index: 999;
+    border-radius: 2px;
+    background-color: #FC3A38;
+}
+.jkty_text {
+    /* line-height: 40px; */
+    text-align: center;
+    color: #eeeeee;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/*banner phone*/
+.banner {
+    width: 100%;
+    position: relative;
+}
+.phone {
+    width: 24%;
+    position: absolute;
+    top: 80px;
+    left: 56%;
+}
+
+/*产品介绍*/
+.productIntro {
+    width: 100%;
+    /* margin: 0 auto; */
+    margin-top: 100px;
+}
+/* @media (min-width: 1920px){
+    .productIntro {
+        max-width: 130rem;
+        margin-top: 8rem;
+    }
+} */
+
+.prod_header {
+    height: 70px;
+    border-left: 6px solid #FC3A38;
+    padding-left: 20px;
+}
+.prod_header_ch {
+    font-size: 26px;
+    line-height: 1;
+}
+.prod_header_en {
+    font-size: 20px;
+    opacity: 0.6;
+    line-height: 3.4;
+}
+
+/* 产品介绍栏目类型 */
+.prod_type_box {
+    margin-top: 90px;
+    text-align: center;
+}
+.prod_type {
+    width: 90%;
+    margin: 0 auto;
+}
+.prod_type_item {
+    text-align: center;
+}
+.prod_item_Img {
+    width: 44%;
+    margin: 0 auto;
+}
+.prod_type_text1 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+.prod_type_text2 {
+    font-size: 16px;
+    padding: 0 20px;
+}
+@media (max-width: 1024px){
+    .prod_type_text2 {
+        font-size: 14px;
+        padding: 0 10px;
+    }
+}
+.gray_line_box {
+    width: 100%;
+    text-align: center;
+}
+.gray_line_between {
+    width: 22px;
+    border-top: 4px #bbb solid;
+    margin: 7px auto;
+}
+/* @media (min-width: 1920px){
+    .prod_type_text2 {
+        padding: 0 5.5rem;
+    }
+    .intro_describe_text {
+        padding-right: 21rem;
+    }
+} */
+
+/* 包工侠小程序 */
+.bgx_xcx {
+    margin-top: 100px;
+    height: 470px;
+    position: relative;
+}
+.showQRCode {
+    width: 100%;
+    height: 100%;
+    border: 1px solid green;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    display: none;
+}
+.showQRCode .qrcode_img {
+    box-shadow:0px 0px 30px 5px #ffffff;
+    background-color: rgba(250, 0, 0, 0.8);
+    padding: 10px;
+    /* border-radius: 10px; */
+    position: absolute;
+    top: 33%;
+    left: 44%;
+    width: 162px;
+    color: #fff;
+}
+.mask_text {
+    margin-top: 10px;
+}
+.closeBtn {
+    cursor: pointer;
+}
+.bgx_xcx_img {
+    width: 390px;
+    position: absolute;
+    top: 30px;
+    left: 100px;
+}
+
+.big_red_border {
+    border: 6px solid #FC3A38;
+    width: 200px;
+    height: 280px;
+}
+
+.xcx_item_title {
+    height: 70px;
+    border-left: 6px solid #FC3A38;
+    padding-left: 10px;
+}
+
+.intro_describe_text {
+    padding-right: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.xcx_item_title .btn-danger {
+    font-size: 18px;
+    color: #FFF;
+    border-radius: 30px;
+    border: 0;
+}
+
+/*包工侠找项目*/
+.bgx_zxm {
+    margin-top: 100px;
+    height: 450px;
+}
+
+.bgx_zxm_describe {
+    padding-top: 50px;
+}
+
+.bgx_zxm_img {
+    width: 400px;
+    margin-left: 0;
+}
+/* @media (min-width: 1920px){
+    .bgx_zxm_img {
+        margin-left: 6rem;
+    }
+} */
+/*包工侠找劳务 */
+.bgx_zlw_describe {
+    padding-top: 100px;
+}
+
+.bgx_zlw_img {
+    width: 400px;
+    margin-left: 80px;
+}
+/* 包工侠找材料 */
+.bgx_zcl_describe {
+    padding-top: 100px;
+}
+.bgx_zcl_img {
+    width: 400px;
+    margin-left: 0;
+}
+/* @media (min-width: 1920px){
+    .bgx_zcl_img {
+        margin-left: 6rem;
+    }
+} */
+
+/* 包工侠打白条 */
+.bgx_dbt_describe {
+    padding-top: 100px; 
+}
+
+.bgx_dbt_img {
+    width: 400px;
+    margin-left: 80px;
+}

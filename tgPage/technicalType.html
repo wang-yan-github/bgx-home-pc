@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+	<title>包工侠</title>
+	<style type="text/css">
+	html{
+		width: 100%;
+		height: 100%;
+	}
+	body{
+		width: 100%;
+		height: 100%;
+		background: url('./img/bg2.jpg');
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+	}
+	h4{
+		color: #fcfff4 !important;
+		padding: 30px;
+		text-align: center;
+		font-weight: 600 !important;
+		line-height: 28px !important;
+	}
+	.btn_{
+		background-color: #fff;
+		height: 44px;
+		line-height: 44px;
+		width: 90%;
+		margin-left: 5%;
+		margin-top: 100px;
+		color: #6f50a6;
+		border-radius: 30px;
+		text-align: center;
+		font-size: 16px;
+	}
+
+	.item{
+		height: 38px;
+		line-height: 38px;
+		display: inline-block;
+		border-radius: 30px;
+		color: #666;
+		padding: 0 15px;
+		margin: 12.5px 8px;
+		border: 1px solid #ad96da;
+		color: #fff;
+		
+	}
+	.active{
+		color: #fff;
+		border: 1px solid #6652a6;
+		background: -webkit-linear-gradient(left,#6841ec ,  #a260f5); /* Safari 5.1 - 6.0 */
+		background: -o-linear-gradient(right, #6841ec,  #a260f5); /* Opera 11.1 - 12.0 */
+		background: -moz-linear-gradient(right, #6841ec,  #a260f5); /* Firefox 3.6 - 15 */
+		background: linear-gradient(to right, #6841ec , #a260f5); /* 标准的语法 */
+	}
+</style>
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+<!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+	<h4>选择您感兴趣的标签，我们会为您匹配相关项目内容</h4>
+	<div class="swap"></div>
+	<div class="bottom"></div>
+	<div class="btn_">我选好了</div>
+	<!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+	<script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+	<!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			//获取参数
+			function getURLParameter(name) { 
+				return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search)||[,""])[1].replace(/\+/g, '%20'))||null; 
+			}
+			//获取工程类型
+			let data = {};
+			data.skey = "technicalType";
+			$.ajax({ url: "https://www.baogongxia.com/public_api_controller/findDictList", data: data, success: function(res){
+				if (parseInt(res.errorCode) === 200) {
+					console.log("注册成功");
+						//选择分类
+						console.log(res);
+						let item="";
+						for(let i =1; i<res.data.length;i++){
+							let type = res.data[i].name;
+							let code = res.data[i].skey;
+							item += "<div class='item' code="+code+">"+type+"</div>";
+						}
+						$('.swap').html(item);
+                        //选项选择
+                        $('.item').click(
+                        	function(){
+                        		$(this).toggleClass('active');
+                        })
+                    }
+                }});
+			//我选好了
+			$('.btn_').click(function(){
+				let active = $('.item.active');
+				if(active.length == 0){
+					alert("请选择感兴趣的工程类型");
+					return;
+				}
+				let code ="";
+				for(let i = active.length;i--;){
+                   code+=active.eq(i).attr("code")+",";
+				}
+				//注册接口
+				let phone = getURLParameter('phone');
+				let yzm = getURLParameter('yzm');
+				zhuce(phone,yzm,code);
+			})
+			function zhuce(phone,yzm,code){
+				let data = {};
+				data.role = 0;
+				data.phone = phone;
+				data.password = "";
+				data.code = yzm;
+				data.type = 1;
+				data.technicalType = code;
+				$.ajax({ url: "https://www.baogongxia.com/user_api_controller/phonelogin", data: data, success: function(res){
+					if (parseInt(res.errorCode) === 200) {
+						console.log("注册成功");
+						localStorage.setItem("isRegister",true);
+						location.href = "./tg.html?type=1";
+					}
+				}});
+			}
+		})
+	</script>
+</body>
+</html>

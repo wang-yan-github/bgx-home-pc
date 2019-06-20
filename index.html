@@ -1,0 +1,346 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="keywords" content="包工侠,找项目,找劳务,找材料" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+
+	<title>包工侠-首页</title>
+	<link rel="icon" href="common/images/header_ico.ico" type="img/x-ico" />
+
+	<!-- 样式引入 -->
+	<link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="lib/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="common/css/myreset.css">
+	<link rel="stylesheet" type="text/css" href="index/css/index.css">
+
+	<!-- js 引入 -->
+	<script type="text/javascript" src="lib/jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="lib/bootstrap/js/bootstrap.min.js"></script>
+	<!--[if lt IE 9]>
+		<script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<!--[if lt IE 9]>
+		<p class="browser-up">提示：你的浏览器版本过低，无法显示和实现部分功能，请<a href="https://browsehappy.com/"> 升级 </a>！</p>
+	<![endif]-->
+
+		<!-- 右侧固定二维码 -->
+		<div class="qrcode_fixed">
+			<div class="jkty_text">微信扫一扫</div>
+			<div>
+				<img  class="img-responsive center-block" src="common/images/qrcode_gzh.jpg" alt="">
+			</div>
+			<div class="jkty_text">关注公众号<br>体验小程序</div>
+		</div>
+		<!-- 头部 -->
+		<header>
+			<nav class="header-top">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4">
+							<div class="logo fl">
+								<a href="index.html">
+									<img src="common/images/logo.jpg" alt="">
+								</a>
+							</div>
+							<!-- <p class="tele_icon fl"><i class="fa fa-phone"> </i> 028-85521744</p> -->
+						</div>
+						<div class="col-md-4">
+							<!-- <img src="common/images/header_img.png" alt=""> -->
+						</div>
+						<div class="col-md-4 text-right">
+							<div class="tele_icon"><i class="fa fa-phone"></i> 028-85521744</div>
+							<!-- <form class="navbar-form text-right" role="search">
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="搜索">
+									<i class="fa fa-search"></i>
+								</div>
+								<button type="submit" href="#" class="btn btn-danger">搜索</button>
+							</form> -->
+						</div>
+					</div>
+				</div>
+			</nav>
+			<nav class="navbar" role="navigation">
+				<div class="selectType collapse navbar-collapse">
+					<ul class="nav">
+						<li><a href="#" class="select_active">公司首页</a></li>
+						<li><a href="./gfdt/gfdt.html">官方动态</a></li>
+						<li><a href="./hyzx/hyzx.html">行业资讯</a></li>
+						<li><a href="./jrwm/jrwm.html">招贤纳士</a></li>
+						<li><a href="./gywm/gywm.html">关于我们</a></li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+
+		<div id="myCarousel" class="carousel slide">
+				<!-- data-ride="carousel" -->
+			<!-- 轮播（Carousel）指标 -->
+			<!-- <ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel" data-slide-to="1"></li>
+				<li data-target="#myCarousel" data-slide-to="2"></li>
+				<li data-target="#myCarousel" data-slide-to="3"></li>
+				<li data-target="#myCarousel" data-slide-to="4"></li>
+			</ol>    -->
+			<!-- 轮播（Carousel）项目 -->
+			<div class="carousel-inner banner">
+				<div class="item active">
+					<img src="index/images/index_banner1.png" alt="First slide">
+				</div>
+				<!-- <div class="item">
+					<img src="index/images/index_banner2.png" alt="Second slide">
+				</div>
+				<div class="item">
+					<img src="index/images/index_banner3.png" alt="Third slide">
+				</div>
+				<div class="item">
+					<img src="index/images/index_banner4.png" alt="Four slide">
+				</div>
+				<div class="item">
+					<img src="index/images/index_banner5.png" alt="Fir slide">
+				</div> -->
+			</div>
+			<div class="phone">
+				<img class="img-responsive center-block" src="index/images/phone_icon.png" alt="">
+			</div>
+			<!-- 轮播（Carousel）导航 -->
+			<!-- <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"> -->
+				<!-- <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span> -->
+			<!-- </a> -->
+			<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+				<!-- <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				<span class="sr-only">Next</span> -->
+			</a>
+		</div> 
+			
+		<!-- 产品介绍 -->
+		<div class="productIntro">
+			<div class="container">
+					<div class="prod_header">
+							<div class="prod_header_ch">产品介绍</div>
+							<div class="prod_header_en">Product function introduction</div>
+					</div>
+					<div class="prod_type_box">
+						<div class="prod_type row">
+							<div class="col-md-3 col-lg-3 prod_type_item">
+								<div class="prod_item_Img">
+									<img class="img-responsive center-block" src="index/images/p_icon1.png" alt="">
+								</div>
+								<div class="prod_type_text1">项目100%真实</div>
+								<div class="gray_line_box">
+									<div class="gray_line_between"></div>
+								</div>
+								<div class="prod_type_text2">平台项目均由实力强大的甲方单位发包，真实可靠</div>
+							</div>
+							<div class="col-md-3 col-lg-3 prod_type_item">
+								<div class="prod_item_Img">
+									<img class="img-responsive center-block" src="index/images/p_icon2.png" alt="">
+								</div>
+								<div class="prod_type_text1">劳务征信体系</div>
+								<div class="gray_line_box">
+									<div class="gray_line_between"></div>
+								</div>
+								<div class="prod_type_text2">平台劳务信息与征信数据库匹配，全真实劳务征信</div>
+							</div>
+							<div class="col-md-3 col-lg-3 prod_type_item">
+								<div class="prod_item_Img">
+									<img class="img-responsive center-block" src="index/images/p_icon3.png" alt="">
+								</div>
+								<div class="prod_type_text1">材料比价模式</div>
+								<div class="gray_line_box">
+									<div class="gray_line_between"></div>
+								</div>
+								<div class="prod_type_text2">平台上百家材料商认证入驻，真实报价，真正低价</div>
+							</div>
+							<div class="col-md-3 col-lg-3 prod_type_item">
+								<div class="prod_item_Img">
+									<img class="img-responsive center-block" src="index/images/p_icon4.png" alt="">
+								</div>
+								<div class="prod_type_text1">资金银行存管</div>
+								<div class="gray_line_box">
+									<div class="gray_line_between"></div>
+								</div>
+								<div class="prod_type_text2">平台上交易资金通过农商银行流转，真实到帐可查</div>
+							</div>
+						</div>
+					</div>
+					<!-- 包工侠小程序 -->
+					<div class="bgx_xcx row">
+						<div class="col-md-6 col-lg-6">
+							<div class="big_red_border"></div>
+							<div class="bgx_xcx_img">
+								<img class="img-responsive center-block" src="index/images/bgx_xcx.png" alt="">
+							</div>
+						</div>
+						<div class="col-md-6 col-lg-5 col-lg-offset-1 bgx_xcx_describe">
+							<div class="xcx_item_title">
+								<div class="prod_header_ch">找项目</div>
+								<div class="prod_header_en">优质可靠的项目</div>
+								<div class="intro_describe_text">
+									甲方单位真实一手发包，数千条发包项目，包工侠可随时预约，信用工头更可优先预约优质项目，要找项目就到这儿预约吧！
+								</div>
+								<input type="button" class="btn btn-danger" onclick="showQRCode();" value="点击下载"/>
+							</div>
+						</div>
+					</div>
+					
+					<!-- 包工侠小项目 -->
+					<div class="bgx_zxm row">
+						<div class="col-md-6 col-lg-5 bgx_zxm_describe">
+							<div class="xcx_item_title">
+								<div class="prod_header_ch">包工侠</div>
+								<div class="prod_header_en">诚信专业的工头</div>
+								<div class="intro_describe_text">
+									平台包工头征信评级，实名认证，过往经验技能一目了然，江湖信用助您找到最优质的包工头！
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 col-lg-6 col-lg-offset-1">
+							<div class="bgx_zxm_img">
+								<img class="img-responsive center-block" src="index/images/bgx_zxm.png" alt="">
+							</div>
+						</div>
+					</div>
+		
+					<!-- 包工侠找劳务 -->
+					<div class="bgx_zxm row">
+						<div class="col-md-6 col-lg-6">
+							<div class="bgx_zlw_img">
+								<img class="img-responsive center-block" src="index/images/bgx_zlw.png" alt="">
+							</div>
+						</div>
+						<div class="col-md-6 col-lg-5  col-lg-offset-1 bgx_zlw_describe">
+							<div class="xcx_item_title">
+								<div class="prod_header_ch">找劳务</div>
+								<div class="prod_header_en">技能娴熟的劳务</div>
+								<div class="intro_describe_text">
+									各工种劳务实名认证，技能特长罗列清晰，心仪劳务及时预约，保障工程进度质量，就在这儿找劳务吧！
+								</div>
+							</div>
+						</div>
+					</div>
+		
+					<!-- 包工侠找材料 -->
+					<div class="bgx_zxm row">
+						<div class="col-md-6 col-lg-5 bgx_zcl_describe">
+							<div class="xcx_item_title">
+								<div class="prod_header_ch">拼材料</div>
+								<div class="prod_header_en">保质保价的材料</div>
+								<div class="intro_describe_text">
+									直击生产商，材料供应找到单品需求，系统设备完成系统采购，订单求购，发布您的订单需求，各路商家来报价；二手材料搞定您的剩余材料，低价保质就在拼材料！
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 col-lg-6 col-lg-offset-1">
+							<div class="bgx_zcl_img">
+								<img class="img-responsive center-block" src="index/images/bgx_zcl.png" alt="">
+							</div>
+						</div>
+					</div>
+		
+					<!-- 包工侠打白条-->
+					<div class="bgx_zxm row">
+						<div class="col-md-6 col-lg-6">
+							<div class="bgx_dbt_img">
+								<img class="img-responsive center-block" src="index/images/bgx_dbt.png" alt="">
+							</div>
+						</div>
+						<div class="col-md-6 col-lg-5  col-lg-offset-1 bgx_dbt_describe">
+							<div class="xcx_item_title">
+								<div class="prod_header_ch">信用生活</div>
+								<div class="prod_header_en">江湖信用体验区</div>
+								<div class="intro_describe_text">
+									征信积分当钱用，打白条解决工程资金问题，法务、保险助力工程安全，优先预约等更多信用体验就在信用生活！
+								</div>
+							</div>
+						</div>
+					</div>
+			</div>
+		</div>
+		<!-- 点击下载弹出二维码框层 -->
+		<div id="showQRCode" class="showQRCode">
+			<div onclick="hideQRCode();" class="text-right closeBtn">
+				<i class="fa fa-close" style="font-size:50px;color:red"></i>
+			</div>
+			<div class="qrcode_img">
+				<img class="img-responsive center-block" src="common/images/qrcode_gzh.jpg" alt="">
+				<div class="text-center mask_text">使用微信扫一扫，即刻体验包工侠小程序！</div>
+			</div>
+		</div>
+		<!-- 底部 footer -->
+		<div class="footer">
+			<div class="container">
+				<div class="footer-content row">
+					<div class="col-md-3 col-sm-3">
+						<div class="red_row_line"></div>
+						<ul>
+							<li class="foot_title">联系我们</li>
+							<li>QQ : 3235046695</li>
+							<li>邮箱 : baogongxia@163.com</li>
+							<li>联系地址：成都高新区益州大道中段星宸国际B座1503号</li>
+						</ul>
+					</div>
+					<div class="col-md-2">
+						<div class="red_row_line"></div>
+						<ul>
+							<li class="foot_title">营销服务</li>
+							<li><a href="#">项目招投标</a></li>
+							<li><a href="#">招聘劳务</a></li>
+							<li><a href="#">采集材料</a></li>
+							<li><a href="#">代付材料款</a></li>
+						</ul>
+					</div>
+					<div class="col-md-2">
+						<div class="red_row_line"></div>
+						<ul>
+							<li class="foot_title">帮助中心</li>
+							<li><a href="#">投诉建议</a></li>
+							<li><a href="#">常见问题</a></li>
+							<li><a href="#">关于包工侠</a></li>
+						</ul>
+					</div>
+					<div class="col-md-1">
+						<div class="column_line"></div>
+					</div>
+					<div class="col-md-4 qrCode_box">
+						<div class="qrCode">
+							<div class="text-center fl f-weight wx_gzh_code">
+								<div>
+									<img class="img-responsive center-block" src="common/images/qrcode_gzh.jpg" alt="微信公众号">
+								</div>
+								<div>微信公众号</div>
+							</div>
+							<div class="text-center fl f-weight wx_xcx_code">
+								<div>
+									<img class="img-responsive center-block" src="common/images/qrcode_xcx.jpg" alt="微信小程序">
+								</div>
+								<div>微信小程序</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- 底部 footer2 -->
+		<div class="footer2">
+			<div class="container">
+				<div class="foot-text">
+					<span class="company-name">北京同创新业科技有限公司</span>
+					<span class="copy-right">COPYRIGHT@2017包工侠baogongxia.com</span>
+					<span class="beianhao">备案号：京ICP1备16032010号</span>
+				</div>
+			</div>
+		</div>
+		
+	<script type="text/javascript" src="index/js/index.js"></script>
+	
+</body>
+</html>

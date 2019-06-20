@@ -1,0 +1,92 @@
+/* 我们包工侠 */
+.bgx_intro {
+    margin-top: 50px;
+    position: relative;
+}
+.bgx_intro_content {
+    margin-left: 75px;
+    position: relative;
+}
+.bgx_intro_text {
+    width: 500px;
+    height: 330px;
+    background: #f2f2f2;
+    position: absolute;
+    left: 500px;
+    top: 60px;
+    padding: 8px 15px;
+}
+.bgx_intro_text p {
+    font-size: 14px;
+    line-height: 1.8;
+}
+.bgx_intro_title1 {
+    font-size: 24px;
+}
+.bgx_intro_title2 {
+    font-size: 16px;
+}
+.bgx_intro_title {
+    border-bottom: 1px solid #dddddd;
+    padding-bottom: 4px;
+    margin-bottom: 15px;
+}
+.bgx_intro_img {
+    width: 550px;
+}
+/* 工作环境 */
+.work_nev_box {
+    margin-top: 20px;
+}
+.work_nev_title {
+    border-top: 1px solid #dddddd;
+    border-bottom: 2px solid #cccccc;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+.work_title1 {
+    font-size: 24px;
+}
+.work_title2 {
+    font-size: 16px;
+}
+.work_nev_img {
+    margin-top: 50px;
+}
+
+/* 我们使命 */
+.our_mission_box {
+    margin-top: 50px;
+}
+.our_mission_img {
+    position: relative;
+    margin-top: 50px;
+}
+
+.mission_title1 {
+    font-size: 24px;
+}
+.mission_title2 {
+    font-size: 16px;
+}
+.mission_title {
+    border-top: 1px solid #dddddd;
+    border-bottom: 2px dotted #cccccc;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+.our_mission_content {
+    border: 1px solid #FC3A38;
+    padding: 40px 60px;
+    position: absolute;
+    left: 82px;
+    top: 46px;
+    z-index: 600;
+}
+.our_mission_content p {
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    line-height: 1.8;
+}
+

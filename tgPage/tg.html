@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+	<title>包工侠</title>
+	<link rel="stylesheet" type="text/css" href="reset.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+	<style type="text/css">
+	html{
+		font-size: 16px;
+	}
+	.bgSwap {
+		background: url('img/bg.jpg');
+		background-size: 100% 100%;
+		height: 890px;
+		position: relative;
+	}
+	.padding_{
+		padding: 0 10%;
+		position: relative;
+	}
+	.getYzm{
+		position: absolute;
+		top: 10px;
+		right: 12%;
+		color: #fff;
+	}
+	.banner{
+		height: 255px;
+	}
+	.desc,.desc1{
+		text-align: center;
+		color: #fff;
+		font-size: 18px;
+	}
+	.desc{
+		margin-bottom: 18px;
+	}
+	.desc1{
+		margin-top: 30px;
+	}
+	.desc1 span{
+		color: #fdce00;
+	}
+	.input_{
+		width: 100%;
+		height: 38px;
+		margin-bottom: 25px;
+		padding-left: 5px;
+		background-color: inherit;
+		border: 2px solid #fff;
+		border-radius: 10px;
+		font-size: 16px;
+		outline: none;
+		color: #fff;
+	}
+	.input_::-webkit-input-placeholder { /* WebKit browsers */
+		color: #ccc;
+	}
+	.input_:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+		color: #ccc;
+	}
+	.input_::-moz-placeholder { /* Mozilla Firefox 19+ */
+		color: #ccc;
+	}
+	.input_:-ms-input-placeholder { /* Internet Explorer 10+ */
+		color: #ccc;
+	}
+	.sub_swap{
+		position: relative;
+		height: 42px;
+	}
+	.submit_{
+		width: 212px;
+		height: 42px;
+		position: absolute;
+		left: 50%;
+		margin-left: -106px;
+		background: url('img/btn.png');
+		background-size: 100%;
+		border: none;
+		outline: none;
+	}
+	.xmSwap{
+		height: 80px;
+		width: 100%; 
+		margin-top: 80px;
+		overflow: hidden;
+	}
+	.item {
+		float: left;
+		width: 24%;
+		height: 80px;
+		background: url('img/xmBg.png') no-repeat;
+		background-size: 100% 100%;
+		color: #fff;
+		padding: 20px 10px;
+	}
+	.item div{
+		line-height: 20px;
+		font-size: 14px;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		display: -webkit-box;
+		-webkit-line-clamp: 2;
+		overflow:hidden;
+		/*! autoprefixer: off */
+		-webkit-box-orient: vertical;
+	}
+	.space{
+		float: left;
+		width: 7%;
+		height: 80px;
+	}
+	.bgxSwap{
+		position: relative;
+		height: 171px;
+		margin-top: 10px;
+	}
+	.img_{
+		width: 171px;
+		height: 171px;
+		position: absolute;
+		left: 50%;
+		margin-left: -85px;
+	}
+	.rig_suc{
+		width: 90%;
+		height: 215px;
+		position: absolute;
+		top: 256px;
+		left: 50%;
+		margin-left: -45%;
+		visibility: hidden;
+		background: url('img/success.png');
+		background-size: 100% 100%; 
+		text-align: center;
+	}
+	.desc2{
+		margin-top: 113px;
+		line-height: 22px;
+		color: #666;
+	}
+	.clear{
+		clear: both;
+	}
+</style>
+
+</head>
+<body>
+	<!-- 外层容器 -->
+	<div class="bgSwap">
+		<div class="banner"></div>
+		<div class="desc">马上开始注册,有机会领取奖品哟</div>
+		<div class="padding_">
+			<input class="input_" type="input" name="phone" placeholder="请输入手机号" />
+			<span class="getYzm">获取验证码</span>
+			<input class="input_"type="input" name="phone" placeholder="请输入手机号验证码" />
+			<div class="sub_swap">
+				<input class="submit_"type="submit" value="" />
+			</div>
+		</div>
+		<!-- 项目展示 -->
+		<div class="xmSwap">
+			<div class="space"></div>
+			<div class="item"><div>加载中</div></div>
+			<div class="space"></div>
+			<div class="item"><div>加载中</div></div>
+			<div class="space"></div>
+			<div class="item"><div>加载中</div></div>
+			<div class="space"></div>
+			<div class="clear"></div>>
+		</div>
+		<div class="desc1">查看更多内容请登录<span>"包工侠"</span>小程序</div>
+		<div class="bgxSwap">
+			<image class="img_" src="img/erweima.png"></image>
+		</div>
+		<!-- 注册浮层 -->
+		<div class="rig_suc">
+			<div class="desc2">尊敬的包工侠用户，您已成功注册包工侠<br>请前往微信小程序"包工侠",免费查看<br>更多项目招标信息</div>
+		</div>
+	</div>
+	<!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+	<script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+	<script type="text/javascript">
+		let interval = null;
+		let yzmDisabled= false;
+		let currentTime= 91;
+		$(function() {
+			if(localStorage.getItem('isRegister')){
+				$(".rig_suc").css("visibility","visible");
+			}
+			$('.submit_').click(function() {
+				let phone = $('.input_')[0].value;
+				let yzm = $('.input_')[1].value;
+				if (!phone) {
+					alert("手机号不能为空");
+					return;
+				}
+				if (Number.parseInt(phone.length) !== 11) {
+					alert("手机号长度有误！");
+					return;
+				}
+				if (!yzm) {
+					alert("验证码不能为空");
+					return ;
+				}
+				//跳转选择页
+				location.href = "./technicalType.html?phone="+phone+"&yzm="+yzm;
+			})
+			//获取验证码
+			$('.getYzm').click(function () {
+				getYzm();
+			})
+			function getYzm() {
+				let phone = $('.input_')[0].value;
+				let yzm = $('.input_')[1].value;
+				if (yzmDisabled) {
+					return;
+				}
+				if (!phone) {
+					alert("请输入手机号");
+					return;
+				}
+				if (Number.parseInt(phone.length) !== 11) {
+					alert("手机号长度有误！");
+					return;
+				}
+    //设置验证码不可点击
+    yzmDisabled= true;
+    //处理倒计时
+    interval = setInterval(function() {
+    	currentTime--;
+    	$('.getYzm').text(currentTime + '秒');
+    	if (currentTime <= 0) {
+    		clearInterval(interval)
+    		yzmTime= '',
+    		$('.getYzm').text('重新获取');
+    		yzmInitTime= 91,
+    		yzmDisabled= false
+    	}
+    }, 1000);
+    //点击获取验证码
+    var data = {};
+    data.phone = phone;
+    $.ajax({url:'https://www.baogongxia.com/public_api_controller/bgxsendcode',data:data,success:function(res) {
+    	if (parseInt(res.errorCode) !== 200) {
+    		alert("获取验证码失败！");
+    		return;
+    	}
+    }})
+}
+//获取参数
+function getURLParameter(name) { 
+	return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search)||[,""])[1].replace(/\+/g, '%20'))||null; 
+
+}
+    //获取项目名称
+    var data1 = {};
+    data1.type = getURLParameter("type");
+    $.ajax({url:'https://www.baogongxia.com/user_api_controller/spread',data:data1,success:function(res) {
+    	let data = res.data;
+    	for(let i = data.length;i--;){
+    		$(".item div").eq(i).html(data[i].name);
+    		$(".item").eq(i).attr("i", data[i].id);
+    		$(".item").eq(i).attr("t", data[i].isTendering);
+    		$(".item").eq(i).click(function(){
+    			//没有注册
+    			if(!localStorage.getItem("isRegister")){
+    				alert("请先注册再查看");
+    				return;
+    			}
+    			location.href="./xmInfo.html?i="+ $(".item").eq(i).attr("i")+"&t="+$(".item").eq(i).attr("t")
+    		})
+    	}
+
+
+    }})
+
+})
+</script>
+</body>
+</html>

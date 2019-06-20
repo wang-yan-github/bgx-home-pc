@@ -1,0 +1,113 @@
+/* banner theme */
+.banner img {
+    border: 0;
+}
+
+/* 官方动态新闻列表 */
+.gfdt_news_list {
+    position: relative;
+    margin-top: 60px;
+}
+.xhcoentbox {
+    padding: 48px 0;
+    border-bottom: 1px solid #e4e4e4;
+}
+.xn_lftbox {
+    width: 880px;
+    height: 175px;
+    float: left;
+}
+.xn_timebox {
+    float: left;
+    width: 160px;
+    height: 120px;
+    border-right: 5px solid #e4e4e4;
+    margin-top: 27px;
+    text-align: center;
+    padding: 0 36px;
+}
+.xn_newsLine1 {
+    color: #FC3A38;
+}
+.xn_newsDay {
+    font-size: 54px;
+    color: #FC3A38;
+    text-align: center;
+}
+.xn_newsYear {
+    font-size: 14px;
+    color: #FC3A38;
+}
+.xn_newsMonth {
+    font-size: 14px;
+    color: #FC3A38;
+}
+.xn_title {
+   width: 620px;
+   float: left;
+   height: 20px;
+   font-size: 18px;
+   text-align: left;
+   line-height: 20px; 
+   margin-left: 50px;
+   margin-top: 36px;
+   font-weight: 600;
+}
+.xn_title a {
+    color: #222222;
+}
+.xn_title a:hover {
+    color: #FC3A38;
+}
+.xn_content {
+    width: 620px;
+    float: left;
+    height: 80px;
+    margin-top: 0px;
+    margin-left: 50px;
+    line-height: 25px;
+    margin-top: 10px;
+    overflow: hidden;
+    font-size: 14px;
+    text-align: left;
+    color: #898989;
+}
+
+.xn_ritbox {
+    float: right;
+    width: 260px;
+    height: 175px;
+    overflow: hidden;
+}
+.xn_ritbox img {
+    width: 260px;
+    height: 175px;
+}
+
+
+
+/* 分页 */
+.gfdt_page_box {
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+.gfdt_page {
+    margin: 0 auto;
+}
+/* .pagination {
+    margin: 0 auto;
+   
+} */
+.pagination>li>a {
+    margin-left: 10px;
+}
+.pagination>li:first-child>a, .pagination>li:first-child>span, .pagination>li:last-child>a, .pagination>li:last-child>span, .pagination>li>a, .pagination>li>span {
+    border-radius: 40px;
+}
+
+.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
+    background-color: #FC3A38;
+    border-color: #FC3A38;
+}
+

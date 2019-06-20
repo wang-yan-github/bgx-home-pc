@@ -1,0 +1,173 @@
+
+/* 加入我们主区域标题区 */
+.zxns_content_title1 {
+    margin-top: 50px;
+    font-size: 30px;
+    font-weight: bold;
+}
+.zxns_black {
+    margin: 0 auto;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    width: 194px;
+    height: 6px;
+}
+.zxns_black_line {
+    width: 90px;
+    border-bottom: 2px solid #222222;
+}
+.zxns_black_circle {
+    width: 6px;
+    height: 6px;
+    background: #222222;
+    border-radius: 3px;
+    margin-left: 3px;
+    margin-right: 3px;
+    margin-top: -3px;
+}
+.zxns_content_title2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+.zxns_red_line_box {
+    height: 2px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+.zxns_red_line {
+    margin: 0 auto;
+    width: 40px;
+    height: 1px;
+    border-top: 1px solid #FC3A38;
+}
+.qdjr_text {
+    margin-top: 8px;
+    margin-bottom: 4px;
+}
+
+/* 职位描述与表单 */
+.job_rigister {
+    position: relative;
+}
+.info_big_text {
+    font-size: 30px;
+    font-weight: bold;
+    color: #dddddd;
+    opacity: 0.5;
+    position: absolute;
+    left: 196px;
+    top: -7px;
+}
+.job_mian {
+    margin-top: 40px;
+    position: relative;
+}
+.jobtext img{
+    width: 10px;
+    height: 10px;
+    margin-bottom: 3px;
+    margin-right: 5px;
+}
+.content_left {
+    width: 550px;
+    height: 450px;
+    padding-left: 100px;
+}
+@media (min-width: 1920px) {
+    .content_left {
+        padding-left: 20px;
+    } 
+}
+.jobTitle {
+    font-size: 26px;
+    font-weight: 600;
+    margin-left: 15px;
+}
+.job_duty {
+    margin-top: 15px;
+    color: #FC3A38;
+    font-size: 16px;
+    margin-left: 15px;
+}
+.line_red {
+    width: 120px;
+    border-bottom: 1px solid #FC3A38;
+    margin-top: 5px;
+    margin-bottom: 8px;
+    margin-left: 15px;
+}
+.jobtext span{
+    display: block;
+    line-height: 1.8;
+}
+.content-right {
+    width: 460px;
+    height: 540px;
+    padding-right: 25px;
+    padding-left: 25px;
+    padding-top: 20px;
+    margin-right: 100px;
+    background-color: #F5F5F5;
+    border-radius: 6px;
+}
+@media (min-width: 1920px) {
+    .content_right {
+        margin-right: 20px;
+    } 
+}
+
+.form_area .form-group {
+    margin-top: 18px;
+}
+.form_area .submitBtn {
+    margin-top: 31px;
+}
+
+/* 眼镜图片 */
+.glass_img {
+    width: 350px;
+    position: absolute;
+    top: 477px;
+    left: 0px;
+}
+
+/*横向分割线*/
+.area_divide {
+    text-align: center;
+}
+.area_divide span {
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 40px;
+    display: block;
+    width: 96%;
+    height: 1px;
+    border-bottom: 1px solid #ddd;
+}
+/*团队精神*/
+.team_describe {
+    width: 100%;
+    height: 240px;
+    background: #F5F5F5;
+}
+.team_title {
+    font-weight: 900;
+    font-size: 18px;
+    margin-top: 50px;
+}
+.team_red_line {
+    width: 60px;
+    border-bottom: 1px solid #FC3A38;
+    margin-top: 3px;
+}
+.team_content {
+    font-size: 16px;
+    font-weight: 600;
+    color: #666666;
+    line-height: 1.8;
+    margin-top: 6px;
+}
+.strong_text {
+    color: #333333;
+}
+
